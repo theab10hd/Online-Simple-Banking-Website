@@ -15,3 +15,9 @@ body {
   background-attachment: fixed;
   overflow-x: hidden;
 }
+
+@media screen and (min-width: 992px) {
+  .box {
+    width: 40%;
+  }
+}

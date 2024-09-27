@@ -84,12 +84,12 @@
             </ul>
           </div>
         </div>
-      </div>  
+      </div>
     </nav>
 
     <!-- Mains -->
     <div class="vw-100 vh-100 d-flex justify-content-center align-items-center">
-      <div class="container p-4 bg-white w-50 text-center shadow rounded-2">
+      <div class="container p-4 bg-white box text-center shadow rounded-2">
         <h4 class="fw-bold mt-2 text-primary">Create an Account</h4>
         <p class="text-secondary">
           Join Bank of Kerala and start your journey towards convenient banking.
@@ -136,12 +136,15 @@
             <input
               type="password"
               class="form-control"
-              id="confirm-password"
+              id="confirmPassword"
               placeholder="Confirm your password"
               required
             />
           </div>
-          <p id="errorText" class="text-danger"></p>
+          <p class="text-danger fw-bold mb-3" id="errorText"></p>
+          <p class="text-secondary mb-3">
+            Already a user? <a href="./login.html">Login Now!</a>
+          </p>
           <button type="button" class="btn btn-primary" onclick="register()">
             Register
           </button>
