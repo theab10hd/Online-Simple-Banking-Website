@@ -30,6 +30,11 @@
 
     <link rel="stylesheet" href="./style.css" />
     <script src="./script.js"></script>
+    <script>
+      if (!localStorage.getItem("logginedUser")) {
+        window.location = "./login.html";
+      }
+    </script>
   </head>
   <body>
     <!-- Navbar -->
@@ -109,7 +114,7 @@
                 />
               </div>
 
-              <p id="dErrorText" class="text-danger fw-bold mb-3"></p>
+              <p id="dErrorText" class="text-danger mb-3"></p>
               <button type="button" class="btn btn-success" onclick="deposit()">
                 Deposit
               </button>
@@ -141,7 +146,7 @@
                   required
                 />
               </div>
-              <p id="wErrorText" class="text-danger fw-bold mb-3"></p>
+              <p id="wErrorText" class="text-danger mb-3"></p>
               <button type="button" class="btn btn-danger" onclick="withdraw()">
                 Withdraw
               </button>
