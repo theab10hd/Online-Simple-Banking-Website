@@ -70,10 +70,6 @@ function deposit() {
   } else {
     dErrorText.innerHTML = `Password Incorrect!`;
   }
-
-  setTimeout(() => {
-    dErrorText.innerHTML = "";
-  }, 3000);
 }
 
 function withdraw() {
@@ -95,10 +91,6 @@ function withdraw() {
       wErrorText.innerHTML = `Password Incorrect!`;
     }
   }
-
-  setTimeout(() => {
-    wErrorText.innerHTML = "";
-  }, 3000);
 }
 
 function updateUser() {
